@@ -17,9 +17,10 @@ dependencies {
           },
           'com.amazonaws.serverless:aws-serverless-java-container-springboot2:[1.4,)',
           'io.symphonia:lambda-logging:1.0.3',
-          'org.projectlombok:lombok:1.18.8'
   )
   implementation 'org.projectlombok:lombok:1.18.22'
+  annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
   testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.9")
 }
 

@@ -12,9 +12,15 @@
  */
 package com.amazonaws.serverless.sample.springboot2.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
-
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Pet {
     private String id;
     private String breed;

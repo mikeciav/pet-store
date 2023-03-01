@@ -74,4 +74,14 @@ public class PetsController {
         return newPet;
     }
 
+    @RequestMapping(path = "/create-random-pet", method = RequestMethod.POST)
+    public Pet createRandomPet() {
+        return Pet.builder()
+                .id(UUID.randomUUID().toString())
+                .breed(PetData.getRandomBreed())
+                .dateOfBirth(PetData.getRandomDoB())
+                .name(PetData.getRandomName())
+                .build();
+    }
+
 }
